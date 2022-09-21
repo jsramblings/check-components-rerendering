@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import PokemonCard from "./PokemonCard";
 
 const usePokemons = () => {
@@ -17,6 +17,10 @@ const usePokemons = () => {
 const PokemonList = () => {
   const [liked, setLiked] = useState([]);
   const pokemons = usePokemons();
+  const handleLike = useCallback(
+    (name) => setLiked((state) => [...state, name]),
+    [setLiked]
+  );
   return (
     <div>
       <h3>Here are some pokemons..</h3>
@@ -27,7 +31,7 @@ const PokemonList = () => {
             key={pokemon.name}
             liked={liked.includes(pokemon.name)}
             pokemon={pokemon}
-            onLike={(name) => setLiked((state) => [...state, name])}
+            onLike={handleLike}
           />
         ))}
       </div>
