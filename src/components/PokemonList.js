@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import PokemonCard from './PokemonCard';
+import React, { useState, useEffect } from "react";
+import PokemonCard from "./PokemonCard";
 
 const usePokemons = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -21,7 +21,7 @@ const PokemonList = () => {
     <div>
       <h3>Here are some pokemons..</h3>
       <p>Click "Like" to check what components rerender!</p>
-      <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+      <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
         {pokemons.map((pokemon) => (
           <PokemonCard
             key={pokemon.name}
