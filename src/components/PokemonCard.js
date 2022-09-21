@@ -1,6 +1,6 @@
 import React from "react";
 
-const PokemonCard = ({ pokemon, liked, onLike }) => (
+const PokemonCard = React.memo(({ pokemon, liked, onLike }) => (
   <div
     style={{
       border: "1px solid lightgrey",
@@ -15,6 +15,6 @@ const PokemonCard = ({ pokemon, liked, onLike }) => (
     </h3>
     {!liked && <button onClick={() => onLike(pokemon.name)}>Like</button>}
   </div>
-);
+));
 
 export default PokemonCard;
