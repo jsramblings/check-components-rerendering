@@ -10,3 +10,5 @@ Used to showcase how to use the React DevTools to check what components rerender
 Can you spot the unnecessary rerenders? 😀
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-3cmy6b)
+
+<video src='why-did-this-render-profiler-session.mov' >
