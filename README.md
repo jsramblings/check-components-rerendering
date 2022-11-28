@@ -11,4 +11,5 @@ Can you spot the unnecessary rerenders? 😀
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-3cmy6b)
 
-<video src='why-did-this-render-profiler-session.mov' >
+https://user-images.githubusercontent.com/1322468/204291696-a2377186-61f7-480c-be2d-6388808e7d9e.mp4
+
