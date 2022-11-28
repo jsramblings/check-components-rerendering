@@ -15,6 +15,4 @@ const PokemonCard = ({ pokemon, liked, onLike }) => (
   </div>
 );
 
-PokemonCard.whyDidYouRender = true;
-
 export default PokemonCard;
