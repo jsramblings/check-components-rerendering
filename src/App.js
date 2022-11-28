@@ -1,6 +1,6 @@
-import React from 'react';
-import './style.css';
-import PokemonList from './components/PokemonList';
+import React from "react";
+import "./style.css";
+import PokemonList from "./components/PokemonList";
 
 export default function App() {
   return (
